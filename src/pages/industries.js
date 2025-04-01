@@ -43,15 +43,14 @@ export default function Industries() {
               description: "Secure and scalable fintech solutions for modern banking.",
               icon: ChartBarIcon,
 
-              image: "/industries/finance.jpg",
-            image: "https://randomuser.me/api/portraits/women/44.jpg",
+            image: "https://images.unsplash.com/photo-1616803140344-6682afb13cda?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEJhbmtpbmd8ZW58MHx8MHx8fDA%3D",
 
             },
             {
               title: "Healthcare",
               description: "Innovative healthcare tech solutions for a connected world.",
               icon: ShieldCheckIcon,
-              image: "/industries/healthcare.jpg",
+              image: "https://uhnfoundation.ca/wp-content/uploads/2020/03/Toronto-General-Hospital-worlds-best-2020.jpg",
             //   image:"https://loremflickr.com/health/200?random=0",
 
             },
@@ -59,25 +58,25 @@ export default function Industries() {
               title: "Retail & E-commerce",
               description: "Seamless e-commerce experiences and retail digital transformation.",
               icon: ServerIcon,
-              image: "/industries/retail.jpg",
+              image: "https://images.unsplash.com/photo-1481437156560-3205f6a55735?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8UmV0YWlsfGVufDB8fDB8fHww",
             },
             {
               title: "Education & E-learning",
               description: "Interactive and scalable digital learning platforms.",
               icon: CodeBracketSquareIcon,
-              image: "/industries/education.jpg",
+              image: "https://media.istockphoto.com/id/585091202/photo/group-of-kids-learning-to-code-in-elementary-school-class.webp?a=1&b=1&s=612x612&w=0&k=20&c=rKSvBrJZPqIsNnsKE2ofwrHd6kN4WxbE-GDdTkuNL9M=",
             },
             {
               title: "Logistics & Transportation",
               description: "Optimized supply chain management with AI-driven insights.",
               icon: GlobeAltIcon,
-              image: "/industries/logistics.jpg",
+              image: "https://plus.unsplash.com/premium_photo-1661962420310-d3be75c8921c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fExvZ2lzdGljcyUyMCUyNiUyMFRyYW5zcG9ydGF0aW9ufGVufDB8fDB8fHww",
             },
             {
               title: "Government & Public Sector",
               description: "Secure, scalable, and accessible government digital solutions.",
               icon: BriefcaseIcon,
-              image: "/industries/government.jpg",
+              image: "https://plus.unsplash.com/premium_photo-1661925387774-b1ba6b7bb0ad?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEdvdmVybm1lbnR8ZW58MHx8MHx8fDA%3D",
             },
           ].map((industry, index) => (
             <motion.div
@@ -108,12 +107,12 @@ export default function Industries() {
             {
               title: "AI & Machine Learning",
               description: "We integrate AI-powered insights for industry growth and efficiency.",
-              image: "/growth-ai.jpg",
+              image: "https://media.istockphoto.com/id/1387900612/photo/automation-data-analytic-with-robot-and-digital-visualization-for-big-data-scientist.jpg?s=612x612&w=0&k=20&c=50maOJU6CpVC55mYnUqtff2aiaJZ7KlmMn4jNhWD_eo=",
             },
             {
               title: "Cloud & Automation",
               description: "Optimizing industries through cloud computing and automation.",
-              image: "/growth-cloud.jpg",
+              image: "https://media.istockphoto.com/id/2043823863/photo/businesswomen-connecting-to-databases-on-the-cloud-virtual-workflow-servers-system-and-data.jpg?s=612x612&w=0&k=20&c=hqHvlF7uEVfTyX3BF3Mc6s5BIYqvmWu51t-ctpXKhhY=",
             },
           ].map((growth, index) => (
             <motion.div

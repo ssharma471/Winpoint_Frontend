@@ -162,22 +162,23 @@
 //   )
 // }
 
+"use client";
 
 import Navbar from "./navbar";
 import { motion } from "framer-motion";
 
 const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
+  { name: "Open roles", href: "/careers" },
+  { name: "Internship program", href: "/internships" },
+  { name: "Our values", href: "/values" },
+  { name: "Meet our leadership", href: "/leadership" },
 ];
 
 const stats = [
-  { name: "Offices Worldwide", value: "12" },
-  { name: "Full-time Colleagues", value: "300+" },
-  { name: "Hours per Week", value: "40" },
-  { name: "Paid Time Off", value: "Unlimited" },
+  { name: "StartUp Venture", value: "Winpont Digital" },
+  { name: "Full-time Colleagues", value: "Growing Team" },
+  { name: "Hours per Week", value: "Flexible" },
+  { name: "Paid Time Off", value: "Generous" },
 ];
 
 export default function WorkWithUs() {
@@ -212,7 +213,7 @@ export default function WorkWithUs() {
           </h2>
           <p className="mt-6 text-lg text-gray-300 sm:text-xl/8">
             Join a team that values innovation, creativity, and excellence. We
-            empower our employees to grow and create meaningful impact.
+            are just launching our venture and looking for passionate individuals to grow with us.
           </p>
         </motion.div>
 
@@ -223,13 +224,13 @@ export default function WorkWithUs() {
           transition={{ duration: 1, delay: 0.5 }}
           className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none"
         >
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-lg font-semibold text-gray-300 sm:grid-cols-2 md:flex lg:gap-x-10">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-lg font-semibold text-orange-500 sm:grid-cols-2 md:flex lg:gap-x-10">
             {links.map((link, index) => (
               <motion.a
                 key={link.name}
                 href={link.href}
                 whileHover={{ scale: 1.05 }}
-                className="transition hover:text-indigo-300"
+                className="transition hover:text-white"
               >
                 {link.name} <span aria-hidden="true">&rarr;</span>
               </motion.a>
