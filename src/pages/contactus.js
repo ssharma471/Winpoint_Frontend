@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import { Switch } from "@headlessui/react";
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 export default function Contact() {
   const [agreed, setAgreed] = useState(false);
@@ -185,6 +186,7 @@ export default function Contact() {
         </div>
       </form>
     </div>
+    <Footer></Footer>
     </>
 
   );

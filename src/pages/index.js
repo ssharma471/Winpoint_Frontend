@@ -424,6 +424,7 @@ import {
 } from "@heroicons/react/24/solid";
 import Navbar from "./navbar";
 import Companies from "./companies";
+import Footer from "./footer";
 
 export default function Home() {
   return (
@@ -637,10 +638,6 @@ export default function Home() {
         </motion.a>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-6 text-center">
-        <p className="text-sm">&copy; {new Date().getFullYear()} Winpoint Digital. All rights reserved.</p>
-      </footer>
-    </div>
+<Footer></Footer>    </div>
   );
 }

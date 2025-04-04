@@ -1,0 +1,88 @@
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 50px;
+    /* margin-top: 10px; */
+    /* text-align: center; */
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2F2F4F;
+}
+
+.topItem {
+    color: #F1F1F1;
+    font-size: 14px;
+}
+
+.brandingSection {
+    margin: 30px 0;
+}
+
+.brandingSection h2 {
+    margin: 10px 0;
+    /* padding-left: -100px; */
+    color: #FFFFFF;
+
+}
+
+.brandingSection p {
+    color: #CCCCCC;
+    font-size: 14px;
+
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.socialMedia {
+    margin: 20px 0;
+    padding-bottom: -200px;
+    /* display: flex; */
+}
+
+.socialMedia a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #FFD700; /* Gold color for a premium look */
+}
+
+.linksSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.linksColumn h4 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.linksColumn a {
+    display: block;
+    color: #CCCCCC;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.linksColumn a:hover {
+    color: #FFD700;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Navbar from "./navbar";
 import { BriefcaseIcon, GlobeAltIcon, ChartBarIcon, ShieldCheckIcon, ServerIcon, CodeBracketSquareIcon } from "@heroicons/react/24/solid";
+import Footer from "./footer";
 
 export default function Industries() {
   return (
@@ -8,7 +9,7 @@ export default function Industries() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative flex flex-col items-center text-center py-24 px-6 bg-gradient-to-r from-blue-800 to-indigo-900 text-white">
+      <div className="relative flex flex-col items-center text-center py-24 px-6 bg-gradient-to-r from-gray-800 to-blue-900 text-white">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -100,7 +101,7 @@ export default function Industries() {
       </div>
 
       {/* Growth Section */}
-      <div className="bg-gray-900 py-20 text-white">
+      <div className="bg-gray-700 py-20 text-white">
         <h2 className="text-4xl font-bold text-center">Driving Growth in Every Sector</h2>
         <div className="mt-12 mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
           {[
@@ -133,7 +134,7 @@ export default function Industries() {
       </div>
 
       {/* Call-to-Action Section */}
-      <div className="bg-blue-700 py-16 text-center text-white">
+      <div className="bg-gray-800 py-16 text-center text-white">
         <motion.h2
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -162,9 +163,10 @@ export default function Industries() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-6 text-center">
+      {/* <footer className="bg-gray-900 text-white py-6 text-center">
         <p className="text-sm">&copy; {new Date().getFullYear()} Winpoint Digital. All rights reserved.</p>
-      </footer>
+      </footer> */}
+      <Footer></Footer>
     </div>
   );
 }
