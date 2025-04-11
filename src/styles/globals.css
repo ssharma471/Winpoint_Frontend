@@ -19,3 +19,49 @@
     
 
   }
+
+  .loader {
+    border: 3px solid goldenrod;
+    border-top: 3px solid black;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 12px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Letter fade-in animation */
+  .fade-in-letter {
+    opacity: 0;
+    transform: translateY(10px);
+    display: inline-block;
+    animation: fadeInLetter 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInLetter {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Rainbow gradient text */
+  .rainbow-text {
+    background: linear-gradient(
+      360deg,
+      gold,
+      white
+
+      );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
