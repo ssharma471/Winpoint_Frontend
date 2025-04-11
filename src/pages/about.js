@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 
 import Footer from "./footer";
 import Navbar from "./navbar";
@@ -19,6 +20,40 @@ const stats = [
 ];
 
 export default function WorkWithUs() {
+    useEffect(() => {
+      // Clear any previous Crisp state
+      delete window.$crisp;
+      delete window.CRISP_WEBSITE_ID;
+  
+      // Set new session variables
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "1f81339b-985b-4879-ae59-3a8cc192df7b";
+  
+      // Inject Crisp script only if not already present
+      if (!document.querySelector("script[data-crisp]")) {
+        const script = document.createElement("script");
+        script.src = "https://client.crisp.chat/l.js";
+        script.async = true;
+        script.setAttribute("data-crisp", "true");
+  
+        script.onload = () => {
+          // Wait until crisp is ready before resetting
+          const interval = setInterval(() => {
+            if (window.$crisp && window.$crisp.push) {
+              window.$crisp.push(["do", "session:reset"]); // This will clear the chat history
+              // Optional: Open the chat automatically
+              // window.$crisp.push(["do", "chat:open"]);
+              clearInterval(interval);
+            }
+          }, 10);
+        };
+  
+        document.head.appendChild(script);
+      } else {
+        // Script already there? Still reset.
+        window.$crisp.push(["do", "reset"]);
+      }
+    }, []);
   return (
     <div className="relative min-h-screen text-white bg-gradient-to-br from-gray-800 to-blue-900">
       {/* Navbar */}
