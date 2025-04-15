@@ -475,7 +475,7 @@ export default function Home() {
           transition={{ duration: 1 }}
           className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl"
         >
-          Welcome to <span className="text-indigo-600">Winpoint</span>
+          Welcome to <span className="text-indigo-600">Winpoint Digital</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 30 }}
